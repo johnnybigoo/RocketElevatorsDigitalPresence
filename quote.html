@@ -483,8 +483,8 @@
 
         <!-- header of the page -->
 		<section id="quote-fm">
-			<div class="container">
-
+			<div class="container ">
+				<!--container p-3 my-3 border" style="background-color: lightsteelblue; vertical-align: top;-->
 				<div class="heading-title heading-dotted text-center">
 					<h1>Get A Quote</h1>
 					<!-- <p class="lead font-lato">Let's get started!</p> -->
@@ -494,11 +494,11 @@
 				<header class="heading-title heading-dotted text-center">
 					<!-- <h1>Get A Quote</h1> -->
 					<p class="lead font-lato">Let's get started!</p>
-					<hr />
+					<!-- <hr /> -->
 				</header>
 				
-				<div class="row justify-content-center align-items-center text-center">
-
+				<div class="row p-2 my-2 border vertical-align: top;">
+					<!--justify-content-center align-items-center text-center-->
 					<!-- Text for buttons -->
 					<div class="col-md-8 col-sm-8">
 						<h3>Please check the option corresponding to your project.</h3>
@@ -592,6 +592,93 @@
 			</div>							
 		</section>
 
+		<div class="container p-3 my-3 border" style="background-color: lightsteelblue; vertical-align: top;">
+			<div class="card-block" style="background-color: lightsteelblue; vertical-align: top;">
+					<div class="row">
+						<div class="col-md-6">
+							<form id="type-form">
+								<label>
+									Building type<br>
+									<select id="type-answer">
+										<option value="select">Select</option>
+										<option value="residential">Residential</option>
+										<option value="comercial">Commercial</option>
+										<option value="corporate">Corporate</option>
+										<option value="hybrid">Hybrid</option>
+									</select>
+								</label>
+							</form>
+							<form id="fields">
+								<div class="form-group" id="numApartments">
+									<label for="numApartments">Number of apartments in the building:</label>
+									<input type="number" id="input_apartments" min="0" oninput="validity.valid||(value='');"><br />
+								</div>
+								<div class="form-group" id="numCompanies">
+									<label for="numCompanies">Number of separate tenant companies:</label>
+									<input type="number" id="input_acompanies" min="0" oninput="validity.valid||(value='');"><br />
+								</div>
+								<div class="form-group" id="numBusinesses">
+									<label for="numBusinesses">The number of distinct businesses:</label>
+									<input type="number" id="input_businesses" min="0" oninput="validity.valid||(value='');"><br />
+								</div>
+								<div class="form-group" id="numFloorsRes">
+									<label for="numFloorsRes">Number of floors contained in the building(excluding the basements):</label>
+									<input type="number" id="input_floorsRes" min="0" oninput="validity.valid||(value='');"><br />
+								</div>
+								<div class="form-group" id="numFloorsHyb">
+									<label for="numFloorsHyb">Number of floors contained in the building(including the basements):</label>
+									<input type="number" id="input_floorsHyb" min="0" oninput="validity.valid||(value='');"><br />
+								</div>
+								<div class="form-group" id="numBasements">
+									<label for="numBasements">Number of basements contained in the building:</label>
+									<input type="number" id="input_basements" min="0" oninput="validity.valid||(value='');"><br />
+								</div>
+								<div class="form-group" id="numParking">
+									<label for="numParking">The number of parking space available:</label>
+									<input type="number" id="input_parking" min="0" oninput="validity.valid||(value='');"><br />
+								</div>
+								<div class="form-group" id="numCages">
+									<label for="numCages">The number of elevator cages to be deployed:</label>
+									<input type="number" id="input_cages" min="0" oninput="validity.valid||(value='');"><br />
+								</div>
+								<div class="form-group" id="numOccupants">
+									<label for="numOccupants">Number of occupants per floor:</label>
+									<input type="number" id="input_occupants" min="0" oninput="validity.valid||(value='');"><br />
+								</div>
+								<div class="form-group" id="numHours">
+									<label for="numHours">Number of hours of activity of the building per day:</label>
+									<input type="number" id="input_hours" min="0" max="24" oninput="validity.valid||(value='');"><br />
+								</div>
+							</form>
+					</div>
+
+					<div class="col-md-6">
+						<h3 class="results">Recommended number of columns and shafts:</h3>
+						<p id="showColumns"></p>
+						<p id="showElevators"></p>
+						<label>Chose a product line to see the values</label>
+
+						<label class="radio">
+						<input type="radio" name="radio-btn" value="1">
+						<i></i> Standard
+						</label>
+						<label class="radio">
+						<input type="radio" name="radio-btn" value="2">
+						<i></i> Premium
+						</label>
+						<label class="radio">
+						<input type="radio" name="radio-btn" value="3">
+						<i></i> Excelium
+						</label>
+						<h3>Prices:</h3>
+						<p id="showPrices"></p>
+						<p id="showFees"></p>
+						<p id="showTotal"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 
 
@@ -682,6 +769,9 @@
 
         <!--JS for Quote Form-->
         <script src="assets/js/quote-form.js"></script>
+
+		<!--Request quote jQuery-->
+		<script src="assets/js/request-quote.js"></script>
 		
 		<!-- STYLESWITCHER - REMOVE -->
 		<!-- <script async src="demo_files/styleswitcher/styleswitcher.js"></script> -->
