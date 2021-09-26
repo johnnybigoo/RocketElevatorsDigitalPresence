@@ -612,8 +612,9 @@
 
 							<div class="col-md-3 border-right">
 								<div class="d-flex flex-column align-items-center text-center p-3 py-5 col-md-12 col-sm-12">
-									<h5>Please check the option corresponding to your project.</h5>
-									<hr>
+									<h4>Building Type</h4>
+									
+									<hr />
 
 									<!-- QUOTE FORM quote-form-->
 									<form id="quote-form" method="post" enctype="multipart/form-data">
@@ -643,46 +644,70 @@
 							<div class="col-md-5 border-right">
 								<div class="d-flex justify-content-between align-items-center p-3 py-5">
 									<div id="input-fields" class="hidden d-flex justify-content-between align-items-center mb-3">
-										<div class="row mt-2">	
-											<div id="input-title" class="hidden col-md-10 col-sm-10">
-												<h5 class="justify-content-between align-items-center experience">Please check the option corresponding to the type of elevators you are looking for.</h5>
+										<div class="row mt-2">
+											<div class="row">	
+												<div id="input-title" class="hidden col-md-10 col-sm-10">
+													<h4 class="justify-content-between text-center">Please fill the fields below</h4>
+												</div>
+												<div id="number-of-apartments" class="hidden col-md-4">
+													<label class="labels" for="num-apts">Number of Apartments 
+														<input type="text" value="" name="options" id="num-apts" min="0" max="2000" class="form-control stepper">
+													</label>
+												</div>
+												<div id="number-of-floors" class="hidden col-md-4">
+													<label class="labels" for="num-floors">Number of Floors 
+														<input type="number" value="" name="options" id="num-floors" min="0" max="1000" class="form-control stepper"></label>
+												</div>
+												<div id="number-of-basements" class="hidden col-md-4">
+													<label class="labels" for="num-basements">Number of Basements 
+														<input type="number" value="" name="options" id="num-basements" min="0" max="50" class="form-control stepper"></label>
+												</div>
+												<div id="number-of-parking-spots" class="hidden col-md-5">
+													<label class="labels" for="num-parking">Number of Parking Space 
+														<input type="number" value="" name="options" id="num-parking" min="0" max="5000" class="form-control stepper"></label>
+												</div>
+												<div id="number-of-companies" class="hidden col-md-6">
+													<label class="labels" for="num-businesses">Number of Distinct Businesses 
+														<input type="number" value="" name="options" id="num-businesses" min="0" max="1000" class="form-control stepper"></label>
+												</div>
+												<div id="number-of-corporations" class="hidden col-md-7">
+													<label class="labels" for="num-corporations">Number of Separate Tenant Companies 
+														<input type="number" value="" name="options" id="num-corporations" min="0" max="1000" class="form-control stepper"></label>
+												</div>
+												<div id="maximum-occupancy" class="hidden col-md-7">
+													<label class="labels" for="num-occupants-floor">Maximum Number Of Occupants per Floor 
+														<input type="number" value="" name="options" id="num-occupants-floor" min="0" max="2000" class="form-control stepper"></label>
+												</div>
+												<div id="business-hours" class="hidden col-md-6">
+													<label class="labels" for="num-hours-activity">Number of Hours Activity Per Day
+														<input type="number" value="" name="hybrid-options" id="num-hours-activity" min="0" max="24" class="form-control stepper"></label>
+												</div>
+												<div id="number-of-elevators" class="hidden col-md-8 border-bottom">
+													<label class="labels" for="num-elevators">Number of elevator Cages To Be Deployed
+														<input type="number" value="" name="hybrid-options" id="num-elevators" min="0" max="100" class="form-control stepper"></label>
+												</div>
 											</div>
-											<div id="number-of-apartments" class="hidden col-md-4">
-												<label class="labels" for="num-apts">Number of Apartments 
-													<input type="text" value="" name="options" id="num-apts" min="0" max="2000" class="form-control stepper">
-												</label>
+											<div class="col p-3 py-5">
+												<div id="selection-services-button" class="hidden col-md-12 col-sm-12">
+													<h4 class="d-flex justify-content-between text-center p-3 py-5">Please check the type of elevators you are looking for</h4>
+														<!-- radio buttons for selection of elevators-->
+														<label class="radio col-md-12">
+															<input type="radio" name="selection-btn" value="standard-btn">
+															<i></i> Standard <span class="grey"> ($7565/elevator)</span>
+														</label><br>
+														<label class="radio col-md-12">
+															<input type="radio" name="selection-btn" value="premium-btn">
+															<i></i> Premium <span class="grey"> ($12,345/elevator)</span>
+														</label><br>
+														<label class="radio col-md-12">
+															<input type="radio" name="selection-btn" value="excelium-btn">
+															<i></i> Excelium <span class="grey"> ($15,400/elevator)</span>
+														</label>
+												</div>
 											</div>
-											<div id="number-of-floors" class="hidden col-md-4">
-												<label class="labels" for="num-floors">Number of Floors 
-													<input type="number" value="" name="options" id="num-floors" min="0" max="1000" class="form-control stepper"></label>
-											</div>
-											<div id="number-of-basements" class="hidden col-md-4">
-												<label class="labels" for="num-basements">Number of Basements 
-													<input type="number" value="" name="options" id="num-basements" min="0" max="50" class="form-control stepper"></label>
-											</div>
-											<div id="number-of-parking-spots" class="hidden col-md-5">
-												<label class="labels" for="num-parking">Number of Parking Space 
-													<input type="number" value="" name="options" id="num-parking" min="0" max="5000" class="form-control stepper"></label>
-											</div>
-											<div id="number-of-companies" class="hidden col-md-6">
-												<label class="labels" for="num-businesses">Number of Distinct Businesses 
-													<input type="number" value="" name="options" id="num-businesses" min="0" max="1000" class="form-control stepper"></label>
-											</div>
-											<div id="number-of-corporations" class="hidden col-md-7">
-												<label class="labels" for="num-corporations">Number of Separate Tenant Companies 
-													<input type="number" value="" name="options" id="num-corporations" min="0" max="1000" class="form-control stepper"></label>
-											</div>
-											<div id="maximum-occupancy" class="hidden col-md-7">
-												<label class="labels" for="num-occupants-floor">Maximum Number of Occupants per Floor 
-													<input type="number" value="" name="options" id="num-occupants-floor" min="0" max="2000" class="form-control stepper"></label>
-											</div>
-											<div id="business-hours" class="hidden col-md-6">
-												<label class="labels" for="num-hours-activity">Number of Hours Activity per Day
-													<input type="number" value="" name="hybrid-options" id="num-hours-activity" min="0" max="24" class="form-control stepper"></label>
-											</div>
-											<div id="number-of-elevators" class="hidden col-md-8">
-												<label class="labels" for="num-elevators">Number of elevator cages to be deployed
-													<input type="number" value="" name="hybrid-options" id="num-elevators" min="0" max="100" class="form-control stepper"></label>
+
+											<div>
+												<hr>
 											</div>
 
 											<div class="my-5 py-5 text-center align-items-center col-md-12">
@@ -695,27 +720,14 @@
 								</div>
 							</div>
 
+							<!--Third column-->
 							<div class="col-md-4">
-								<div class="p-3 py-5">
-									<div id="selection-services-button" class="hidden col-md-12 col-sm-12">
-										<h5 class="d-fles justify-content-between align-items-center p-3 py-5">Please check the option corresponding to the type of elevators you are looking for.</h5>
-											<!-- radio buttons for selection of elevators-->
-											<label class="radio col-md-12">
-												<input type="radio" name="selection-btn" value="standard-btn">
-												<i></i> Standard <span class="grey"> ($7565/elevator)</span>
-											</label><br>
-											<label class="radio col-md-12">
-												<input type="radio" name="selection-btn" value="premium-btn">
-												<i></i> Premium <span class="grey"> ($12,345/elevator)</span>
-											</label><br>
-											<label class="radio col-md-12">
-												<input type="radio" name="selection-btn" value="excelium-btn">
-												<i></i> Excelium <span class="grey"> ($15,400/elevator)</span>
-											</label>
+
+									<div class="d-flex justify-content-between align-items-center experience">
+										<span>Columns &amp; Shafts Recommended</span>
+										<span class="border px-3 p-1 add-experience"></span>
 									</div>
 
-
-									<div class="d-flex justify-content-between align-items-center experience"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div>
 									<div class="d-flex flex-row mt-3 exp-container"><img src="https://i.imgur.com/azSfBM3.png" width="45" height="45">
 										<div class="work-experience ml-1"><span class="font-weight-bold d-block">Senior UI/UX Designer</span><span class="d-block text-black-50 labels">Twitter Inc.</span><span class="d-block text-black-50 labels">March,2017 - May 2020</span></div>
 									</div>
