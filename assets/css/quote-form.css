@@ -1,6 +1,11 @@
-body {
-    /* background: rgb(227, 238, 252) */
+#border-rad {
+    border-radius: 5px;
 }
+
+#border-rad-2 {
+    border-radius: 5px;
+}
+
 
 .form-control:focus {
     box-shadow: none;
