@@ -19,12 +19,17 @@ $(document).ready(function () {
     $(".form-group-2").hide();
 });
 
-$("#type-answer1").click(function () {
+$(".type-answer").click(function () {
     if ($("input:radio[name='radio-btn']").is(':checked')) {
-        alert("OK");
+        $(".form-group").hide();
+        $(".form-group-2").hide();
     }
-    else {
-        alert("NONE");
+    else if ($("input:radio[name='res']").is(':checked')) {
+        commom();
+        $("#numApartments").show();
+        $("#numFloorsRes").show();
+        calcRes();
+        $(".form-group-2").show();
     }
 });
 
