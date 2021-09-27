@@ -569,8 +569,8 @@
 							<div class="row-lg-4">
 								<div class="col-md-12">
 									<h3 class="results">Number Of Columns &amp; Shafts Recommended:</h3>
-									<p id="showColumns"></p>
-									<p id="showElevators"></p>
+									<p id="showColumns1"></p>
+									<p id="showElevators1"></p>
 									<label>Chose a product line to see the values</label>
 
 									<!-- radio buttons for selection of elevators-->
@@ -587,9 +587,9 @@
 									<i></i> Excelium <span class="grey"> ($15,400/elevator)</span>
 									</label>
 									<h3 class="text-center">Prices:</h3>
-									<p id="showPrices"></p>
-									<p id="showFees"></p>
-									<p id="showTotal"></p>
+									<p id="showPrices1"></p>
+									<p id="showFees1"></p>
+									<p id="showTotal1"></p>
 								</div>
 							</div>
 						</div>
@@ -676,9 +676,9 @@
 
 								<!-- <div class="col-md-6 border"> -->
 									<form class="col-6 p-8 border">
-										<div class="col border">
+										<!-- <div class="col-12 border"> -->
 											<div class="row-12 p-3 m-2">
-												<h4 class="results">Number Of Columns &amp; Shafts Recommended:</h4>
+												<h4 class="results text-center">Number Of Columns &amp; Shafts Recommended:</h4>
 												<p id="showColumns"></p>
 												<p id="showElevators"></p>
 											</div>
@@ -687,23 +687,25 @@
 												<label>Chose a product line to see the values</label>
 											</div>
 
-											<label class="radio">
+											<div class="row-12 p-3 m-2">
+											<label class="radio col-sm-4">
 												<input type="radio" name="radio-btn" value="1">
-												<i></i> Standard
+												<i></i> Standard <br><span class="grey text-blue text-left"><small>($7565/elevator)</small></span>
 											</label>
-											<label class="radio">
+											<label class="radio col-sm-4">
 												<input type="radio" name="radio-btn" value="2">
-												<i></i> Premium
+												<i></i> Premium <span class="grey text-blue"><small>($12,345/elevator)</small></span>
 											</label>
-											<label class="radio">
+											<label class="radio col-sm-4">
 												<input type="radio" name="radio-btn" value="3">
-												<i></i> Excelium
+												<i></i> Excelium <span class="grey text-blue"><small>($15,400/elevator)</small></span>
 											</label>
-											<h3>Prices:</h3>
+											<h3 class="text-center">Prices:</h3>
 											<p id="showPrices"></p>
 											<p id="showFees"></p>
 											<p id="showTotal"></p>
-										</div>
+											</div>
+										<!-- </div> -->
 									</form>
 								<!-- </div> -->
 							</div>
