@@ -12,25 +12,12 @@ var elevatorsPrice = 0;
 var installationFees = 0;
 var radioValue = 0;
 
-//$("#test").text( "test");
-
 // Begin
 
 $(document).ready(function () {
     $(".form-group").hide();
     $(".form-group-2").hide();
 });
-
-// $("#type-answer-1").on('click', function () {
-//     if ($('#residential').prop('checked')) {
-//         commom();
-//         $("#numApartments").show();
-//         $("#numFloorsRes").show();
-//         calcRes();
-//     } else {
-//         $(".form-group").hide();
-//     }
-// });
 
 
 $("#type-answer").change(function () {
@@ -45,24 +32,24 @@ $("#type-answer").change(function () {
         commom();
         $("#numApartments").show();
         $("#numFloorsRes").show();
-        $(".form-group-2").show();
         calcRes();
+        $(".form-group-2").show();
     } else if (selectedAnswer === "Commercial") {
         commom();
         $("#numBusinesses").show();
         $("#numParking").show();
         $("#numCages").show();
         $("#numFloorsRes").show();
-        $(".form-group-2").show();
         calcCom();
+        $(".form-group-2").show();
     } else if (selectedAnswer === "Corporate") {
         commom();
         $("#numCompanies").show();
         $("#numParking").show();
         $("#numOccupants").show();
         $("#numFloorsHyb").show();
-        $(".form-group-2").show();
         calcCorpHybr();
+        $(".form-group-2").show();
     } else if (selectedAnswer === "Hybrid") {
         commom();
         $("#numBusinesses").show();
@@ -70,14 +57,11 @@ $("#type-answer").change(function () {
         $("#numOccupants").show();
         $("#numHours").show();
         $("#numFloorsHyb").show();
-        $(".form-group-2").show();
         calcCorpHybr();
+        $(".form-group-2").show();
     }
 });
 
-$('#residential').on('click', function () {
-
-});
 
 $(".radio").change(function () {
     radioValue = $("input[name='radio-btn']:checked").val();
