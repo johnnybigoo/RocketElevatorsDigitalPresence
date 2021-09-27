@@ -473,7 +473,7 @@
 
 
 			<!--Request a Form-->
-			<section id="request-a-form">
+			<section id="request-a-quote">
 				<div class="container">
 					<div class="heading-title heading-dotted text-center">
 						<h2>Request A Quote</h2>
@@ -488,16 +488,36 @@
 
 							<div class="row p-3 m-5 text-center">
 								<label class="form-check-label col-3">
-									<input class="form-check-input" type="checkbox" name="residential" required> Residential
+									<input class="form-check-input" type="radio" name="residential" required> Residential
 								</label>
 								<label class="form-check-label col-3">
-									<input class="form-check-input" type="checkbox" name="commercial" required> Commercial
+									<input class="form-check-input" type="radio" name="commercial" required> Commercial
 								</label>
 								<label class="form-check-label col-3">
 									<input class="form-check-input" type="checkbox" name="corporate" required> Corporate
 								</label>
 								<label class="form-check-label col-3">
 									<input class="form-check-input" type="checkbox" name="hybrid" required> Hybrid
+								</label>
+							</div>
+
+							<!-- Corrections -->
+							<div class="row p-3 m-5 text-center">
+								<label id="residential" class="checkbox col-3">
+									<input type="radio" name="radio-btn" value="residential">
+									<i></i> Residential 
+								</label>
+								<label id="commercial" class="checkbox col-3">
+									<input type="radio" name="radio-btn" value="commercial">
+									<i></i> Commercial
+								</label>
+								<label id="corporate" class="checkbox col-3">
+									<input type="radio" name="radio-btn" value="corporate">
+									<i></i> Corporate
+								</label>
+								<label id="hybrid" class="checkbox col-3">
+									<input type="radio" name="radio-btn" value="hybrid">
+									<i></i> Hybrid 
 								</label>
 							</div>
 						</div>
@@ -607,32 +627,24 @@
 									<form id="type-form">
 										<label>
 											Building type<br>
-											
-											<!-- <label id="type-answer1" class="checkbox col-sm-4">
-												<label value="residential">
-												<input type="radio" name="radio-btn">
-												<i></i> Residential
-												</label>
-											</label> -->
 
-											<div id="type-answer">
-												<label class="checkbox">
+											<div id="type-answer-1">
+												<label id="residential" class="checkbox">
 												<input type="radio" name="radio-btn" value="residential">
 												<i></i> Residential 
 												</label>
-												<label class="checkbox">
+												<label id="commercial" class="checkbox">
 												<input type="radio" name="radio-btn" value="commercial">
 												<i></i> Commercial
 												</label>
-												<label class="checkbox">
+												<label id="corporate" class="checkbox">
 												<input type="radio" name="radio-btn" value="corporate">
 												<i></i> Corporate
 												</label>
-												<label class="checkbox">
+												<label id="hybrid" class="checkbox">
 												<input type="radio" name="radio-btn" value="hybrid">
 												<i></i> Hybrid 
 												</label>
-												
 
 											<select id="type-answer">
 												<option value="select">Select</option>

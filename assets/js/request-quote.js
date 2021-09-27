@@ -20,15 +20,24 @@ $(document).ready(function () {
     $(".form-group").hide();
 });
 
-$('#residential').on('click', function () {
-
+$("#type-answer-1").on('click', function () {
+    if ($('#residential').prop('checked')) {
+        commom();
+        $("#numApartments").show();
+        $("#numFloorsRes").show();
+        calcRes();
+    } else {
+        $(".form-group").hide();
+    }
 });
+
 
 $("#type-answer").change(function () {
 
-    var selectedAnswer = $(this).find(':input').text();
+    var selectedAnswer = $(this).find(':checked').text();
 
-    if (selectedAnswer === "Select") {
+    // if (selectedAnswer === "Select") {
+    if (selectedAnswer === null) {
         $(".form-group").hide();
     } else if (selectedAnswer === "Residential") {
         commom();
