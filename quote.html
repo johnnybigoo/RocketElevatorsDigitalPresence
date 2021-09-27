@@ -516,55 +516,61 @@
 						<div id="border-rad-3" class="border bg-white p-5">
 							<div class="row-lg-4 border p-2 mt-9">
 								<div class="col-md-12">
-									<form>
+									<form id="fields">
 										<div class="row g-3">
-											<div class="col-sm-3 py-2 mb-2">
+											<div class="form-group col-sm-3 py-2 mb-2" id="numApartments">
 												<label>Number of Apartments</label>
 												<input type="text" class="form-control">
 											</div>
 											
-											<div class="col-sm-4 py-2 mb-2">
-												<label>Number of Floors</label>
+											<div class="form-group col-sm-4 py-2 mb-2" id="numFloorsRes">
+												<label>Number of Floors<span><small> (Excluding Basements)</small></span></label>
+												<input type="text" class="form-control">
+											</div>
+
+											<div class="form-group col-sm-4 py-2 mb-2" id="numFloorsHyb">
+												<label>Number of Floors<span><small> (Including Basements)</small></span>
+												</label>
 												<input type="text" class="form-control">
 											</div>
 											
-											<div class="col-sm-3 py-2 mb-2">
+											<div class="form-group col-sm-3 py-2 mb-2" id="numBasements">
 												<label>Number of Basements</label>
 												<input type="text" class="form-control">
 											</div>
 
-											<div class="col-sm-4 py-2 mb-2">
+											<div class="form-group col-sm-4 py-2 mb-2" id="numBusinesses">
 												<label>Number of Distinct Businesses</label>
 												<input type="text" class="form-control">
 											</div>
 
-											<div class="col-sm-6 py-2 mb-2">
+											<div class="form-group col-sm-6 py-2 mb-2" id="numParking">
 												<label>Number of Parking Space</label>
 												<input type="text" class="form-control">
 											</div>
 
-											<div class="col-sm-4 py-2 mb-2">
+											<div class="form-group col-sm-4 py-2 mb-2" id="numCages">
 												<label>Number of Elevator Cages Needed</label>
 												<input type="text" class="form-control">
 											</div>
 
-											<div class="col-sm-3 py-2 mb-2">
-												<label>number of Separate Companies</label>
+											<div class="form-group col-sm-3 py-2 mb-2" id="numCompanies">
+												<label>Number of Separate Tennant Companies</label>
 												<input type="text" class="form-control">
 											</div>
 
-											<div class="col-sm-3 py-2 mb-2">
-												<label>Number of occupants per floor</label>
+											<div class="form-group col-sm-3 py-2 mb-2" id="numOccupants">
+												<label>Number of Occupants Per Floor</label>
 												<input type="text" class="form-control">
 											</div>
 
-											<div class="col-sm-6 py-2 mb-2">
+											<!-- <div class="col-sm-6 py-2 mb-2">
 												<label>Number of Floors Including The Basements </label>
 												<input type="text" class="form-control">
-											</div>
+											</div> -->
 
-											<div class="col-sm-6 py-2 mb-2">
-												<label>Number Of Hours Of Activity Of The Building Per Day</label>
+											<div class="form-group col-sm-6 py-2 mb-2" id="numHours">
+												<label>Number Of Hours Of Activity Per Day</label>
 												<input type="text" class="form-control">
 											</div>
 										</div>
@@ -573,7 +579,7 @@
 							</div><br>
 
 
-							<div class="row-lg-4">
+							<div class="row-lg-4 border">
 								<div class="col-md-12 text-center">
 									<h4 class="results text-center">Number Of Columns &amp; Shafts Recommended:</h4>
 									<p id="showColumns1"></p>
@@ -644,7 +650,7 @@
 										</label>
 									</form>
 
-									<form id="fields">
+									<!-- <form id="fields">
 										<div class="form-group" id="numApartments">
 											<label for="numApartments">Number of apartments in the building:</label>
 											<input type="number" id="input_apartments" min="0" oninput="validity.valid||(value='');"><br />
@@ -697,7 +703,7 @@
 											<label for="numHours">Number of hours of activity of the building per day:</label>
 											<input type="number" id="input_hours" min="0" max="24" oninput="validity.valid||(value='');"><br />
 										</div>
-									</form>
+									</form> -->
 								</div>
 
 
