@@ -38,13 +38,14 @@ $("#type-answer").change(function () {
     var selectedAnswer = $(this).find(':checked').text();
 
     // if (selectedAnswer === "Select") {
-    if (selectedAnswer === null) {
+    if (selectedAnswer === "Select") {
         $(".form-group").hide();
         $(".form-group-2").hide();
     } else if (selectedAnswer === "Residential") {
         commom();
         $("#numApartments").show();
         $("#numFloorsRes").show();
+        $(".form-group-2").show();
         calcRes();
     } else if (selectedAnswer === "Commercial") {
         commom();
@@ -52,6 +53,7 @@ $("#type-answer").change(function () {
         $("#numParking").show();
         $("#numCages").show();
         $("#numFloorsRes").show();
+        $(".form-group-2").show();
         calcCom();
     } else if (selectedAnswer === "Corporate") {
         commom();
@@ -59,6 +61,7 @@ $("#type-answer").change(function () {
         $("#numParking").show();
         $("#numOccupants").show();
         $("#numFloorsHyb").show();
+        $(".form-group-2").show();
         calcCorpHybr();
     } else if (selectedAnswer === "Hybrid") {
         commom();
@@ -67,6 +70,7 @@ $("#type-answer").change(function () {
         $("#numOccupants").show();
         $("#numHours").show();
         $("#numFloorsHyb").show();
+        $(".form-group-2").show();
         calcCorpHybr();
     }
 });
@@ -79,6 +83,7 @@ $(".radio").change(function () {
     radioValue = $("input[name='radio-btn']:checked").val();
     calcPrice();
 });
+
 // Funcions
 
 var cleanValues = function () {
