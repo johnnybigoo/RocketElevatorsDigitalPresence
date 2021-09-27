@@ -507,7 +507,16 @@
 										<input type="radio" name="radio-btn" value="hybrid">
 										<i></i> Hybrid 
 									</label>
+
+									<select id="type-answer">
+										<option value="select">Select</option>
+										<option value="residential">Residential</option>
+										<option value="comercial">Commercial</option>
+										<option value="corporate">Corporate</option>
+										<option value="hybrid">Hybrid</option>
+									</select>
 								</form>
+
 							</div>
 						</div>
 					</div>
@@ -566,11 +575,6 @@
 												<input type="text" id="input_occupants" min="0" oninput="validity.valid||(value='');" class="form-control">
 											</div>
 
-											<!-- <div class="col-sm-6 py-2 mb-2">
-												<label>Number of Floors Including The Basements </label>
-												<input type="text" class="form-control">
-											</div> -->
-
 											<div class="form-group col-sm-6 py-2 mb-2" id="numHours">
 												<label>Number Of Hours Of Activity Per Day</label>
 												<input type="text" id="input_hours" min="0" max="24" oninput="validity.valid||(value='');" class="form-control">
@@ -614,19 +618,21 @@
 							</div>
 						</div>
 					</div>
-					<!-- Form Fields -->
+				</div>
+			</section>
+			<!-- Form Fields -->
 
 
 
 
 					<!--Request a Form-->
-					<div class="container p-5 my-3 bg-light vertical-align: top;">
+					<!-- <div class="container p-5 my-3 bg-light vertical-align: top;">
 						<div class="card-block border bg-white vertical-align: top;">
 							<div class="row">
 								<div class="col-md-6">
 									<form id="type-form">
 										<label>
-											Building type<br>
+											Building type<br> -->
 
 											<!-- <div id="type-answer-1">
 												<label id="residential" class="checkbox">
@@ -646,7 +652,7 @@
 												<i></i> Hybrid 
 												</label> -->
 
-											<select id="type-answer">
+											<!-- <select id="type-answer">
 												<option value="select">Select</option>
 												<option value="residential">Residential</option>
 												<option value="comercial">Commercial</option>
@@ -656,7 +662,7 @@
 											
 										</label>
 									</form>
-								</div>
+								</div> -->
 									<!-- <form id="fields">
 										<div class="form-group" id="numApartments">
 											<label for="numApartments">Number of apartments in the building:</label>
@@ -748,11 +754,9 @@
 										<!-- </div> -->
 									<!-- </form> -->
 								<!-- </div> -->
-							</div>
+							<!-- </div>
 						</div>
-					</div>
-				</div>
-			</section>
+					</div> -->
 			<!--Request a Form-->
 
 
