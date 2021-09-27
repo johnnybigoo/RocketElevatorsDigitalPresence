@@ -56,6 +56,10 @@ $("#type-answer").change(function () {
     }
 });
 
+$('#residential').on('click', function () {
+
+});
+
 $(".radio").change(function () {
     radioValue = $("input[name='radio-btn']:checked").val();
     calcPrice();
