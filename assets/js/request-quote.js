@@ -19,11 +19,18 @@ $(document).ready(function () {
     $(".form-group-2").hide();
 });
 
+$("#type-answer1").click(function () {
+    if ($("input:radio[name='radio-btn']").is(':checked')) {
+        alert("OK");
+    }
+    else {
+        alert("NONE");
+    }
+});
 
 $("#type-answer").change(function () {
 
     var selectedAnswer = $(this).find(':checked').text();
-
     // if (selectedAnswer === "Select") {
     if (selectedAnswer === "Select") {
         $(".form-group").hide();
