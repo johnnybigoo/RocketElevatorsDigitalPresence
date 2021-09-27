@@ -18,18 +18,19 @@ var radioValue = 0;
 
 $(document).ready(function () {
     $(".form-group").hide();
+    $(".form-group-2").hide();
 });
 
-$("#type-answer-1").on('click', function () {
-    if ($('#residential').prop('checked')) {
-        commom();
-        $("#numApartments").show();
-        $("#numFloorsRes").show();
-        calcRes();
-    } else {
-        $(".form-group").hide();
-    }
-});
+// $("#type-answer-1").on('click', function () {
+//     if ($('#residential').prop('checked')) {
+//         commom();
+//         $("#numApartments").show();
+//         $("#numFloorsRes").show();
+//         calcRes();
+//     } else {
+//         $(".form-group").hide();
+//     }
+// });
 
 
 $("#type-answer").change(function () {
@@ -39,6 +40,7 @@ $("#type-answer").change(function () {
     // if (selectedAnswer === "Select") {
     if (selectedAnswer === null) {
         $(".form-group").hide();
+        $(".form-group-2").hide();
     } else if (selectedAnswer === "Residential") {
         commom();
         $("#numApartments").show();
