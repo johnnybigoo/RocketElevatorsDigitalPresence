@@ -20,9 +20,13 @@ $(document).ready(function () {
     $(".form-group").hide();
 });
 
+$('#residential').on('click', function () {
+
+});
+
 $("#type-answer").change(function () {
 
-    var selectedAnswer = $(this).find(':selected').text();
+    var selectedAnswer = $(this).find(':input').text();
 
     if (selectedAnswer === "Select") {
         $(".form-group").hide();
