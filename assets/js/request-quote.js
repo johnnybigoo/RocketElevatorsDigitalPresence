@@ -19,23 +19,68 @@ $(document).ready(function () {
     $(".form-group-2").hide();
 });
 
+
 $(".type-answer").click(function () {
-    if ($("input:radio[name='radio-btn']").is(':checked')) {
-        $(".form-group").hide();
-        $(".form-group-2").hide();
-    }
-    else if ($("input:radio[name='res']").is(':checked')) {
+    // if ($("input:radio[value='reset']").is(':checked')) {
+    //     $(".form-group").hide();
+    //     $(".form-group-2").hide();
+    // }
+    // if ($("input:radio[name='radio-btn']").is(':checked')) {
+    //     commom();
+    //     $("#numApartments").show();
+    //     $("#numFloorsRes").show();
+    //     calcRes();
+    //     $(".form-group-2").show();
+    // }
+    // else if ($("input:radio[name='radio-btn']").is(':checked')) {
+    //     commom();
+    //     $("#numBusinesses").show();
+    //     $("#numParking").show();
+    //     $("#numCages").show();
+    //     $("#numFloorsRes").show();
+    //     calcCom();
+    //     $(".form-group-2").show();
+    // }
+    // else if ($("input:radio[name='radio-btn']").is(':checked')) {
+    //     commom();
+    //     $("#numCompanies").show();
+    //     $("#numParking").show();
+    //     $("#numOccupants").show();
+    //     $("#numFloorsHyb").show();
+    //     calcCorpHybr();
+    //     $(".form-group-2").show();
+    // }
+    // else if ($("input:radio[name='radio-btn']").is(':checked')) {
+    //     commom();
+    //     $("#numBusinesses").show();
+    //     $("#numParking").show();
+    //     $("#numOccupants").show();
+    //     $("#numHours").show();
+    //     $("#numFloorsHyb").show();
+    //     calcCorpHybr();
+    //     $(".form-group-2").show();
+    // }
+});
+
+$(".type-answer").change(function () {
+
+    var selectedAnswer = $("input[name='radio-btn']:checked").val();
+    if (selectedAnswer === "residential") {
         commom();
         $("#numApartments").show();
         $("#numFloorsRes").show();
         calcRes();
         $(".form-group-2").show();
+    } else {
+        alert("not work");
     }
-});
+})
 
+// Select button options
 $("#type-answer").change(function () {
 
     var selectedAnswer = $(this).find(':checked').text();
+    // var selectedAnswer = $(this).find(':checked').val();
     // if (selectedAnswer === "Select") {
     if (selectedAnswer === "Select") {
         $(".form-group").hide();
@@ -74,6 +119,10 @@ $("#type-answer").change(function () {
     }
 });
 
+// $(".radio").change(function () {
+//     radioValue = $("input[type='radio']:checked").val();
+//     calcPrice();
+// });
 
 $(".radio").change(function () {
     radioValue = $("input[name='radio-btn']:checked").val();
