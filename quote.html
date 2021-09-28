@@ -485,11 +485,11 @@
 							<!--Header text-->
 							<div class="row-12 p-3 m-2">
 								<h4 class="text-center">Please Select A Building Type</h4>
-							</div>
+							</div><br><hr>
 
 
 							<!-- Checkbox -->
-							<div id="type-form1" class="row px-4 mr-3 align-items-center border">
+							<div id="type-form1" class="row px-4 mr-3 align-items-center">
 								<form class="type-answer2 col px-5">
 									<label class="checkbox col-sm-3">
 										<input type="radio" name="radio-btn" value="residential">
@@ -521,7 +521,7 @@
 						</div>
 
 						<div id="border-rad-3" class="border bg-white p-5">
-							<div class="row-lg-4 border p-2 mt-9">
+							<div class="row-lg-4 border-bottom p-3 mt-9">
 								<div class="col-md-12">
 									<form id="fields">
 										<div class="row align-items-center">
@@ -581,12 +581,13 @@
 							</div><br>
 
 							<!-- Columns & Shafts -->
-							<div class="form-group-2 row-lg-4 border">
+							<div class="form-group-2 row-lg-4">
 								<div class="col-md-12 text-center">
 									<h4 class="results text-center">Number Of Columns &amp; Shafts Recommended:</h4>
 									<p id="showColumns"></p>
 									<p id="showElevators"></p>
-									<label class="text-center">Chose a product line to see the values</label>
+									<br><hr>
+									<label class="text-center font-weight-bold">Choose a product line to see the values</label>
 
 									<!-- radio buttons for selection of elevators-->
 									<label class="radio">
@@ -603,12 +604,19 @@
 									<input type="radio" name="radio-btn" value="3">
 									<i></i> Excelium <span class="grey text-blue"><small>($15,400/elevator)</small></span>
 									</label>
+									<br><hr>
 
-									<h3 class="text-center">Prices:</h3>
-									<div class="col justify-content-md-center text-center">
-										<p id="showPrices" class="p-5 text-blue bg-light"></p>
+									<h3 class="text-center">Estimated:</h3>
+									<div class="row justify-content-md-center text-center">
+										<div class="col-sm-4">
+										<p id="showPrices" class="text-blue bg-light"></p>
+										</div>
+										<div class="col-sm-4">
 										<p id="showFees" class="text-blue bg-light" ></p>
-										<p id="showTotal" class="text-blue bg-light"></p>
+										</div>
+										<div class="col-sm-4">
+										<p id="showTotal" class="text-blue bg-light font-weight-bold"></p>
+										</div>
 									</div>
 									<br><hr>
 									<div value="select">
