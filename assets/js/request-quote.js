@@ -147,10 +147,16 @@ $("#type-answer-1").change(function () {
 
 
 
-$(".radio").change(function () {
-    radioValue = $("input[name='radio-btn']:checked").val();
+// $(".radio").change(function () {
+//     radioValue = $("input[name='radio-btn']:checked").val();
+//     calcPrice();
+// });
+
+$('.radio').on('change keyup', 'input', function () {
+    radioValue = $(this).attr('id')
+    // alert(radioValue);
     calcPrice();
-});
+})
 
 // Funcions
 
@@ -243,6 +249,6 @@ var calcPrice = function () {
 var showPrice = function () {
     var totalValue = elevatorsPrice + installationFees;
     $("#showPrices").text("Elevators price =  " + new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD' }).format(elevatorsPrice));
-    $("#showFees").text("Installtion fees =  " + new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD' }).format(installationFees));
+    $("#showFees").text("Installation fees =  " + new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD' }).format(installationFees));
     $("#showTotal").text("Total value = " + new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD' }).format(totalValue));
 }
