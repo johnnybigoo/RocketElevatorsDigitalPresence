@@ -5,6 +5,7 @@ var numFloorsHyb = 0;
 var numBasements = 0;
 var numShafts = 0;
 var numElevators = 0;
+var showElevators = 0;
 var numColumns = 0;
 var numOccupants = 0;
 var totalNumberOccupants = 0;
@@ -13,12 +14,12 @@ var installationFees = 0;
 var radioValue = 0;
 
 // Begin
-
 $(document).ready(function () {
     $(".form-group").hide();
     $(".form-group-2").hide();
 });
 
+// Select button options
 $(".type-answer").change(function () {
     // if ($('#reset').prop('click')) {
     //     $(".form-group").hide();
@@ -28,8 +29,8 @@ $(".type-answer").change(function () {
         commom();
         $("#numApartments").show();
         $("#numFloorsRes").show();
-        calcRes();
         $(".form-group-2").show();
+        calcRes();
     }
     else if ($('#comm').prop('checked')) {
         commom();
@@ -37,8 +38,8 @@ $(".type-answer").change(function () {
         $("#numParking").show();
         $("#numCages").show();
         $("#numFloorsRes").show();
-        calcCom();
         $(".form-group-2").show();
+        calcCom();
     }
     else if ($('#corp').prop('checked')) {
         commom();
@@ -46,8 +47,8 @@ $(".type-answer").change(function () {
         $("#numParking").show();
         $("#numOccupants").show();
         $("#numFloorsHyb").show();
-        calcCorpHybr();
         $(".form-group-2").show();
+        calcCorpHybr();
     }
     else if ($('#hyb').prop('checked')) {
         commom();
@@ -56,152 +57,24 @@ $(".type-answer").change(function () {
         $("#numOccupants").show();
         $("#numHours").show();
         $("#numFloorsHyb").show();
-        calcCorpHybr();
         $(".form-group-2").show();
+        calcCorpHybr();
     }
 });
-
-
-// $(".type-answer2").click(function () {
-//     if ($("input:radio[value='reset']").is(':checked')) {
-//         $(".form-group").hide();
-//         $(".form-group-2").hide();
-//     }
-//     if ($("input:radio[name='radio-btn']").is(':checked')) {
-//         commom();
-//         $("#numApartments").show();
-//         $("#numFloorsRes").show();
-//         calcRes();
-//         $(".form-group-2").show();
-//     }
-//     else if ($("input:radio[name='radio-btn']").is(':checked')) {
-//         commom();
-//         $("#numBusinesses").show();
-//         $("#numParking").show();
-//         $("#numCages").show();
-//         $("#numFloorsRes").show();
-//         calcCom();
-//         $(".form-group-2").show();
-//     }
-//     else if ($("input:radio[name='radio-btn']").is(':checked')) {
-//         commom();
-//         $("#numCompanies").show();
-//         $("#numParking").show();
-//         $("#numOccupants").show();
-//         $("#numFloorsHyb").show();
-//         calcCorpHybr();
-//         $(".form-group-2").show();
-//     }
-//     else if ($("input:radio[name='radio-btn']").is(':checked')) {
-//         commom();
-//         $("#numBusinesses").show();
-//         $("#numParking").show();
-//         $("#numOccupants").show();
-//         $("#numHours").show();
-//         $("#numFloorsHyb").show();
-//         calcCorpHybr();
-//         $(".form-group-2").show();
-//     }
-// });
-
-
-
-// $("#type-answer").change(function () {
-
-//     var selectedAnswer = $(this).find("input[name='radio-btn']:checked").text();
-//     var selectedAnswer = $(this).find(':checked').text();
-//     if (selectedAnswer === "Residential") {
-//         commom();
-//         $("#numApartments").show();
-//         $("#numFloorsRes").show();
-//         calcRes();
-//         $(".form-group-2").show();
-//     } else if (selectedAnswer === "Commercial") {
-//         commom();
-//         $("#numBusinesses").show();
-//         $("#numParking").show();
-//         $("#numCages").show();
-//         $("#numFloorsRes").show();
-//         calcCom();
-//         $(".form-group-2").show();
-//     } else if (selectedAnswer === "Corporate") {
-//         commom();
-//         $("#numCompanies").show();
-//         $("#numParking").show();
-//         $("#numOccupants").show();
-//         $("#numFloorsHyb").show();
-//         calcCorpHybr();
-//         $(".form-group-2").show();
-//     } else if (selectedAnswer === "Hybrid") {
-//         commom();
-//         $("#numBusinesses").show();
-//         $("#numParking").show();
-//         $("#numOccupants").show();
-//         $("#numHours").show();
-//         $("#numFloorsHyb").show();
-//         calcCorpHybr();
-//         $(".form-group-2").show();
-//     }
-// })
-
-// Select button options
-// $("#type-answer-1").change(function () {
-
-//     var selectedAnswer = $(this).find(':checked').text();
-//     // var selectedAnswer = $(this).find(':checked').val();
-//     // if (selectedAnswer === "Select") {
-//     if (selectedAnswer === "Select") {
-//         $(".form-group").hide();
-//         $(".form-group-2").hide();
-//     } else if (selectedAnswer === "Residential") {
-//         commom();
-//         $("#numApartments").show();
-//         $("#numFloorsRes").show();
-//         calcRes();
-//         $(".form-group-2").show();
-//     } else if (selectedAnswer === "Commercial") {
-//         commom();
-//         $("#numBusinesses").show();
-//         $("#numParking").show();
-//         $("#numCages").show();
-//         $("#numFloorsRes").show();
-//         calcCom();
-//         $(".form-group-2").show();
-//     } else if (selectedAnswer === "Corporate") {
-//         commom();
-//         $("#numCompanies").show();
-//         $("#numParking").show();
-//         $("#numOccupants").show();
-//         $("#numFloorsHyb").show();
-//         calcCorpHybr();
-//         $(".form-group-2").show();
-//     } else if (selectedAnswer === "Hybrid") {
-//         commom();
-//         $("#numBusinesses").show();
-//         $("#numParking").show();
-//         $("#numOccupants").show();
-//         $("#numHours").show();
-//         $("#numFloorsHyb").show();
-//         calcCorpHybr();
-//         $(".form-group-2").show();
-//     }
-// });
-
-
 
 // $(".radio").change(function () {
 //     radioValue = $("input[name='radio-btn']:checked").val();
 //     calcPrice();
 // });
 
+//Getting product line velue checked 
 $('.radio').on('change keyup', 'input', function () {
-    radioValue = $(this).attr('id')
+    radioValue = $(this).attr('value')
     // alert(radioValue);
     calcPrice();
 })
 
-// Funcions
-
+// Functions
 var cleanValues = function () {
     $("#form-group").each(function () {
         this.reset();
@@ -209,6 +82,7 @@ var cleanValues = function () {
     numShafts = 0;
     numColumns = 0;
     numElevators = 0;
+    showElevators = 0;
     totalValue = 0;
     installationFees = 0;
     elevatorsPrice = 0;
@@ -267,6 +141,7 @@ var showResults = function () {
     }
     $("#showColumns").text("Number of columns = " + numColumns);
     $("#showElevators").text("Number of shafts = " + numElevators);
+    $("#qtdElevators").text("Number of Elevators needed = " + numElevators);
     if (radioValue === "1" || radioValue === "2" || radioValue === "3") {
         calcPrice();
     }
@@ -294,3 +169,10 @@ var showPrice = function () {
     $("#showFees").text("Installation fees =  " + new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD' }).format(installationFees));
     $("#showTotal").text("Total value = " + new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD' }).format(totalValue));
 }
+
+//Clear button
+$('#reset').click(function () {
+    $('#fields')[0].reset();
+});
+
+
