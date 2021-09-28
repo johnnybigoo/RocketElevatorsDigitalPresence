@@ -21,57 +21,18 @@ $(document).ready(function () {
 
 
 $(".type-answer2").click(function () {
-    // if ($("input:radio[value='reset']").is(':checked')) {
-    //     $(".form-group").hide();
-    //     $(".form-group-2").hide();
-    // }
-    // if ($("input:radio[name='radio-btn']").is(':checked')) {
-    //     commom();
-    //     $("#numApartments").show();
-    //     $("#numFloorsRes").show();
-    //     calcRes();
-    //     $(".form-group-2").show();
-    // }
-    // else if ($("input:radio[name='radio-btn']").is(':checked')) {
-    //     commom();
-    //     $("#numBusinesses").show();
-    //     $("#numParking").show();
-    //     $("#numCages").show();
-    //     $("#numFloorsRes").show();
-    //     calcCom();
-    //     $(".form-group-2").show();
-    // }
-    // else if ($("input:radio[name='radio-btn']").is(':checked')) {
-    //     commom();
-    //     $("#numCompanies").show();
-    //     $("#numParking").show();
-    //     $("#numOccupants").show();
-    //     $("#numFloorsHyb").show();
-    //     calcCorpHybr();
-    //     $(".form-group-2").show();
-    // }
-    // else if ($("input:radio[name='radio-btn']").is(':checked')) {
-    //     commom();
-    //     $("#numBusinesses").show();
-    //     $("#numParking").show();
-    //     $("#numOccupants").show();
-    //     $("#numHours").show();
-    //     $("#numFloorsHyb").show();
-    //     calcCorpHybr();
-    //     $(".form-group-2").show();
-    // }
-});
-
-$(".type-answer").change(function () {
-
-    var selectedAnswer = $(this).find("input[name='radio-btn']:checked").val();
-    if (selectedAnswer === "residential") {
+    if ($("input:radio[value='reset']").is(':checked')) {
+        $(".form-group").hide();
+        $(".form-group-2").hide();
+    }
+    if ($("input:radio[name='radio-btn']").is(':checked')) {
         commom();
         $("#numApartments").show();
         $("#numFloorsRes").show();
         calcRes();
         $(".form-group-2").show();
-    } else if (selectedAnswer === "commercial") {
+    }
+    else if ($("input:radio[name='radio-btn']").is(':checked')) {
         commom();
         $("#numBusinesses").show();
         $("#numParking").show();
@@ -79,7 +40,8 @@ $(".type-answer").change(function () {
         $("#numFloorsRes").show();
         calcCom();
         $(".form-group-2").show();
-    } else if (selectedAnswer === "corporate") {
+    }
+    else if ($("input:radio[name='radio-btn']").is(':checked')) {
         commom();
         $("#numCompanies").show();
         $("#numParking").show();
@@ -87,7 +49,8 @@ $(".type-answer").change(function () {
         $("#numFloorsHyb").show();
         calcCorpHybr();
         $(".form-group-2").show();
-    } else if (selectedAnswer === "hybrid") {
+    }
+    else if ($("input:radio[name='radio-btn']").is(':checked')) {
         commom();
         $("#numBusinesses").show();
         $("#numParking").show();
@@ -97,10 +60,50 @@ $(".type-answer").change(function () {
         calcCorpHybr();
         $(".form-group-2").show();
     }
+});
+
+
+
+$("#type-answer").change(function () {
+
+    // var selectedAnswer = $(this).find("input[name='radio-btn']:checked").text();
+    // var selectedAnswer = $(this).find(':checked').text();
+    // if (selectedAnswer === "Residential") {
+    //     commom();
+    //     $("#numApartments").show();
+    //     $("#numFloorsRes").show();
+    //     calcRes();
+    //     $(".form-group-2").show();
+    // } else if (selectedAnswer === "Commercial") {
+    //     commom();
+    //     $("#numBusinesses").show();
+    //     $("#numParking").show();
+    //     $("#numCages").show();
+    //     $("#numFloorsRes").show();
+    //     calcCom();
+    //     $(".form-group-2").show();
+    // } else if (selectedAnswer === "Corporate") {
+    //     commom();
+    //     $("#numCompanies").show();
+    //     $("#numParking").show();
+    //     $("#numOccupants").show();
+    //     $("#numFloorsHyb").show();
+    //     calcCorpHybr();
+    //     $(".form-group-2").show();
+    // } else if (selectedAnswer === "Hybrid") {
+    //     commom();
+    //     $("#numBusinesses").show();
+    //     $("#numParking").show();
+    //     $("#numOccupants").show();
+    //     $("#numHours").show();
+    //     $("#numFloorsHyb").show();
+    //     calcCorpHybr();
+    //     $(".form-group-2").show();
+    // }
 })
 
 // Select button options
-$("#type-answer").change(function () {
+$("#type-answer-1").change(function () {
 
     var selectedAnswer = $(this).find(':checked').text();
     // var selectedAnswer = $(this).find(':checked').val();
