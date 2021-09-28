@@ -484,44 +484,44 @@
 						<div id="border-rad" class="col p-6 mb-8 bg-white border">
 							<!--Header text-->
 							<div class="row-12 p-3 m-2">
-								<h4 class="text-center">Please Select A Building Type</h4>
+								<h4 class="text-center">Please Select A Building Type Option</h4>
 							</div><br><hr>
 
 
 							<!-- Checkbox -->
-							<div id="type-form1" class="row px-4 mr-3 align-items-center">
-								<form class="type-answer2 col px-5">
+							<div class="row px-4 mr-3 align-items-center">
+								<form class="type-answer col px-5">
 									<label class="checkbox col-sm-3">
-										<input type="radio" name="radio-btn" value="residential">
+										<input type="radio" name="radio-btn" id="res" value="residential">
 										<i name="res"></i> Residential 
 									</label>
 									<label class="checkbox col-sm-3">
-										<input type="radio" name="radio-btn" value="commercial">
+										<input type="radio" name="radio-btn" id="comm" value="commercial">
 										<i></i> Commercial
 									</label>
 									<label class="checkbox col-sm-3">
-										<input type="radio" name="radio-btn" value="corporate">
+										<input type="radio" name="radio-btn" id="corp" value="corporate">
 										<i></i> Corporate
 									</label>
 									<label class="checkbox col-sm-2">
-										<input type="radio" name="radio-btn" value="hybrid">
+										<input type="radio" name="radio-btn" id="hyb" value="hybrid">
 										<i></i> Hybrid 
 									</label>
 
-									<select id="type-answer-1">
+									<!-- <select id="type-answer-1">
 										<option value="select">Select</option>
 										<option value="residential">Residential</option>
 										<option value="comercial">Commercial</option>
 										<option value="corporate">Corporate</option>
 										<option value="hybrid">Hybrid</option>
-									</select>
+									</select> -->
 								</form>
 
 							</div>
 						</div>
 
 						<div id="border-rad-3" class="border bg-white p-5">
-							<div class="row-lg-4 border-bottom p-3 mt-9">
+							<div class="row-lg-4 p-3 mt-9">
 								<div class="col-md-12">
 									<form id="fields">
 										<div class="row align-items-center">
@@ -531,12 +531,12 @@
 											</div>
 											
 											<div class="form-group col-sm-4 py-2 mb-2" id="numFloorsRes">
-												<label>Number of Floors<span><small> (Excluding Basements)</small></span></label>
+												<label>Number of Floors<span class="grey text-red"><small> (Excluding Basements)</small></span></label>
 												<input type="text" id="input_floorsRes" min="0" oninput="validity.valid||(value='');" class="form-control">
 											</div>
 
 											<div class="form-group col-sm-4 py-2 mb-2" id="numFloorsHyb">
-												<label>Number of Floors<span><small> (Including Basements)</small></span>
+												<label>Number of Floors<span class="grey text-blue"><small> (Including Basements)</small></span>
 												</label>
 												<input type="text" id="input_floorsHyb" min="0" oninput="validity.valid||(value='');" class="form-control">
 											</div>
@@ -577,8 +577,8 @@
 											</div>
 										</div>
 									</form>
-								</div>
-							</div><br>
+								</div><br><hr>
+							</div>
 
 							<!-- Columns & Shafts -->
 							<div class="form-group-2 row-lg-4">
@@ -587,7 +587,7 @@
 									<p id="showColumns"></p>
 									<p id="showElevators"></p>
 									<br><hr>
-									<label class="text-center font-weight-bold">Choose a product line to see the values</label>
+									<label class="text-center font-weight-bold">Choose a product line to see the estimate</label>
 
 									<!-- radio buttons for selection of elevators-->
 									<label class="radio">
@@ -606,7 +606,7 @@
 									</label>
 									<br><hr>
 
-									<h3 class="text-center">Estimated:</h3>
+									<h3 class="text-center">Estimated Prices:</h3>
 									<div class="row justify-content-md-center text-center">
 										<div class="col-sm-4">
 										<p id="showPrices" class="text-blue bg-light"></p>
@@ -619,7 +619,7 @@
 										</div>
 									</div>
 									<br><hr>
-									<div value="select">
+									<div class="type-answer" id="reset" value="select">
 										<button type="button" class="btn btn-primary">Reset</button>
 									</div>
 								</div>
