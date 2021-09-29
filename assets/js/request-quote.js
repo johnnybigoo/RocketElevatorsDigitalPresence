@@ -96,6 +96,12 @@ var commom = function () {
     showResults();
 }
 
+var clear = function () {
+    $("#fields")[0].reset();
+    cleanValues();
+    showResults();
+}
+
 var calcRes = function () {
     $("#fields").change(function () {
         event.preventDefault();
@@ -172,7 +178,7 @@ var showPrice = function () {
 
 //Clear button
 $('#reset').click(function () {
-    $('#fields')[0].reset();
+    clear();
 });
 
 
