@@ -173,8 +173,6 @@ var showPrice = function () {
 //Clear button
 $('#reset').click(function () {
     $('#fields')[0].reset();
-    $('.results').val('');
-    $('.radio').reset();
 });
 
 
