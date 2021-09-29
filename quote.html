@@ -507,7 +507,7 @@
 							<div class="row-lg-4 p-3 mt-9">
 								<div class="col-md-12">
 									<form id="fields">
-										<div class="row align-items-center">
+										<div id="filled" class="row align-items-center">
 											<div class="form-group col-sm-4 py-2 mb-2" id="numApartments">
 												<label>Number of Apartments</label>
 												<input type="text" id="input_apartments" min="0" oninput="validity.valid||(value='');" class="form-control">
@@ -560,7 +560,7 @@
 										</div>
 
 										<!-- Columns & Shafts -->
-										<div class="form-group-2 col-md-12 text-center">
+										<div id="estimated" class="form-group-2 col-md-12 text-center">
 											<h4 class="results text-center">Number Of Columns &amp; Shafts Recommended:</h4>
 											<p class="results" id="showColumns"></p>
 											<p class="results" id="showElevators"></p>

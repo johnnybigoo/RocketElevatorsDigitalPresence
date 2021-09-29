@@ -97,7 +97,10 @@ var commom = function () {
 }
 
 var clear = function () {
+    $(".type-answer")[0].reset();
     $("#fields")[0].reset();
+    // $("#filled")[0].reset();
+    // $("#estimated").reset();
     cleanValues();
     showResults();
 }
