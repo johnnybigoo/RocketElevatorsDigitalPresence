@@ -234,8 +234,8 @@ pre {
     border-radius: 2px;
 
 	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-			border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 section.dark pre {
 	color:#ccc;
