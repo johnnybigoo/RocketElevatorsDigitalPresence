@@ -32,29 +32,6 @@
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
 
-
-
-	<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
-
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-		BACKGROUND IMAGE [together with .boxed class]
-		data-background="assets/images/_smarty/boxed_background/1.jpg"
-	-->
 	</head>
 
 	<body class="smoothscroll enable-animation">
@@ -94,32 +71,6 @@
 		<!-- wrapper -->
 		<div id="wrapper">
 
-			<!-- 
-				AVAILABLE HEADER CLASSES
-
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-
-				.clearfix		= required for mobile menu, do not remove!
-
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
 			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 
 				<!-- TOP NAV -->
@@ -136,21 +87,9 @@
 							<img src="assets/images/_rocket/R2.png" alt="" />
 						</a>
 
-						<!-- 
-							Top Nav 
-							
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
-						-->
 						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
 							<nav class="nav-main">
 
-								<!-- 
-									.nav-onepage
-									Required for onepage navigation links
-									
-									Add .external for an external link!
-								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li class>
 										<!-- HOME -->
@@ -159,12 +98,10 @@
 										</a>
 									</li>
 									<li><!-- SERVICES -->
-										<a href="" class="dropdown-toggle">
+										<a href="#services" class="dropdown-toggle">
 											SERVICES
 										</a>
-										<!-- <a href="#services">
-											SERVICES
-										</a> -->
+
 										<ul class="dropdown-menu white-space= normal">
 											<li>
 												<a href="residential.html#vacuum-home">Residential</a>
@@ -172,9 +109,7 @@
 											<li>
 												<a href="commercial.html#observation-elevator">Commercial</a>
 											</li>
-											<!-- <li>
-												<a href="quote.html">Request A Quote</a>
-											</li> -->
+
 										</ul>
 									</li>
 
@@ -213,34 +148,7 @@
 
 			<!-- REVOLUTION SLIDER -->
 			<div class="slider fullwidthbanner-container roundedcorners">
-				<!--
-					Navigation Styles:
-					
-						data-navigationStyle="" theme default navigation
-						
-						data-navigationStyle="preview1"
-						data-navigationStyle="preview2"
-						data-navigationStyle="preview3"
-						data-navigationStyle="preview4"
-						
-					Bottom Shadows
-						data-shadow="1"
-						data-shadow="2"
-						data-shadow="3"
-						
-					Slider Height (do not use on fullscreen mode)
-						data-height="300"
-						data-height="350"
-						data-height="400"
-						data-height="450"
-						data-height="500"
-						data-height="550"
-						data-height="600"
-						data-height="650"
-						data-height="700"
-						data-height="750"
-						data-height="800"
-				-->
+
 				<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationstyle="preview2">
 					<ul class="hide">
 					
@@ -366,20 +274,6 @@
 									<a class="btn btn-danger btn-lg" href="residential.html">RESIDENTIAL SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 
-							<!-- <div class="tp-caption sfb tp-resizeme"
-								data-x="250"
-								data-y="410" 
-								data-speed="500"
-								data-start="1500"
-								data-easing="Power3.easeInOut"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.1"
-								data-endelementdelay="0.1"
-								data-endspeed="500"
-								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-									<a class="btn btn-default btn-lg" href="#">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
-							</div> -->
 						</li>
 
 						<!-- SLIDE  -->
@@ -437,20 +331,6 @@
 									<a class="btn btn-danger btn-lg" href="commercial.html">COMMERCIAL SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 
-							<!-- <div class="tp-caption sfb tp-resizeme"
-								data-x="250"
-								data-y="410" 
-								data-speed="500"
-								data-start="1500"
-								data-easing="Power3.easeInOut"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.1"
-								data-endelementdelay="0.1"
-								data-endspeed="500"
-								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-									<a class="btn btn-default btn-lg" href="#">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
-							</div> -->
 						</li>
 
 					</ul>
@@ -568,7 +448,7 @@
 												<p id="qtdElevators" class="text-blue bg-light"></p>
 											</div>
 											<hr>
-									
+
 											<label class="text-center font-weight-bold">Choose a product line to see the estimate</label>
 											<br>
 
@@ -705,14 +585,9 @@
 
 		<script src="assets/js/scripts.js"></script>
 
-        <!--JS for Quote Form-->
-        <!-- <script src="assets/js/quote-form.js"></script> -->
-
 		<!--Request quote jQuery-->
 		<script src="assets/js/request-quote.js"></script>
 		
-		<!-- STYLESWITCHER - REMOVE -->
-		<!-- <script async src="demo_files/styleswitcher/styleswitcher.js"></script> -->
 
 		<!-- REVOLUTION SLIDER -->
 		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
