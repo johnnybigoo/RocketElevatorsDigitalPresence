@@ -21,10 +21,7 @@ $(document).ready(function () {
 
 // Select button options
 $(".type-answer").change(function () {
-    // if ($('#reset').prop('click')) {
-    //     $(".form-group").hide();
-    //     $(".form-group-2").hide();
-    // }
+
     if ($('#res').prop('checked')) {
         commom();
         $("#numApartments").show();
@@ -62,10 +59,6 @@ $(".type-answer").change(function () {
     }
 });
 
-// $(".radio").change(function () {
-//     radioValue = $("input[name='radio-btn']:checked").val();
-//     calcPrice();
-// });
 
 //Getting product line velue checked 
 $('.radio').on('change keyup', 'input', function () {
