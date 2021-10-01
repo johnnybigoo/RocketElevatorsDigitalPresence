@@ -19,7 +19,7 @@
 
 Rocket Elevators is a starting project for the Genesis 2 weeks program in CodeBoxx. 
 
-We have created a fictitious company website using a bootstrap 4.0 template where we have modified and adapted to clients requests.
+We have created a fictitious company website using a bootstrap 4.0 template, where we have modified it, and adapted to client requests.
 
 
 
