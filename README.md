@@ -1,4 +1,4 @@
-h<!-- [![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -65,7 +65,7 @@ h<!-- [![Contributors][contributors-shield]][contributors-url]
 
 [![Rocket Elevators][product-screenshot]](http://rocketelevators-jt.com/)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Rocket Elevators is a start project to Genesis program in CodeBoxx. 
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
@@ -156,9 +156,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Jones Tavares - [LinkedIn](https://www.linkedin.com/in/jonestavares/) - jotalico@icloud.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/johnnybigoo/RocketElevatorsDigitalPresence](https://github.com/johnnybigoo/RocketElevatorsDigitalPresence)
 
 
 
