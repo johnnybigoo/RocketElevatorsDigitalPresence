@@ -26,7 +26,6 @@ We have created a fictitious company website using a bootstrap 4.0 template, whe
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 
